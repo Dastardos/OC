@@ -13,11 +13,11 @@ function showState(s)
     g.setResolution(40, 20)
     g.fill(1, 1, 40, 20, " ")
     if s then
-      g.setForeground(0x00FF00)
-      g.set(16, 10, "Access denied")
-    else
       g.setForeground(0xFF0000)
       g.set(16, 10, "Access granted")
+    else
+      g.setForeground(0x00FF00)
+      g.set(16, 10, "Access denied")
     end
   end
 end
